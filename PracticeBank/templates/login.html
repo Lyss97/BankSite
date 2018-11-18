@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/login.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title></title>
+  </head>
+  <body background = "blue.jpg">
+    <h1 id="header"> Bank </h1>
+    <div class="grid">
+      <div class="log">
+
+    <form class="login" action="/mainmenu" method="post">
+      <div class="cont">
+
+
+      <input id = "user" type="text" name="user_name" value="" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+      <input id = "pass"type="password" name="pass_word" value="" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+
+      <button id="log_in" type="submit" name="button"> Login </button>
+    </form>
+      <form class="reg_grid" action="/register" method="get">
+      <button id="reg"type="submit" name="button"> Create New Account </button>
+      </form>
+    </div>
+  </div>
+<p id="msg"> {{msg1}}</p>
+
+    </div>
+
+  </body>
+</html>

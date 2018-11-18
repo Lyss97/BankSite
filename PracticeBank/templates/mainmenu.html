@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/mainmenu.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <title></title>
+</head>
+<body>
+  <h1>Transaction</h1>
+<div class="grid">
+  <div class="log">
+
+<form class="f1" action="/depPage" method="post">
+  <input class = "fluff" type="number" name="dep_amt" placeholder="Deposit Amount" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deposit Amount'">
+<br>
+  <button type="submit" name="type" value="checking">Checking</button>
+  <button type="submit" name="saving" value = "saving" formaction="/deposit">Saving</button>
+</form>
+<br><br>
+<form class="f1" action="/withdraw" method="post">
+  <input class = "fluff" type="number" name="with_amt" placeholder="Withdraw Amount" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Withdraw Amount'">
+  <br>
+    <button type="submit" name="checkingW" value="checking"formaction="/withPage">Checking</button>
+    <button type="submit" name="savingW" value="saving">Saving</button>
+  </form>
+  <br><br>
+  <div class="cont">
+
+<form class="forms" action="/balance" method="post">
+<button class="formSpan"  type="submit" name="balance" > Account Summary </button>
+</form>
+
+<form class="forms" action="/transfer" method="post">
+<button id = "move" class="formSpan" type="submit" name="transfer"> Transfer </button>
+</form>
+<form class="forms" action="/" method="get">
+  <button type="submit" name="signOut"> Sign Out </button>
+</form>
+</div>
+</div>
+  {{msg1}}
+</body>
+
+</html>

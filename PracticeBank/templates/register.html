@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/register.css">
+    <title></title>
+  </head>
+  <body>
+    <h1 id="title"> Register</h1>
+    <p id = "msg1">{{msg1}}</p>
+    <div class="grid">
+      
+      <div class="log">
+      <div class="cont">
+    <form class="" action="/register" method="post">
+      <div class="container">
+
+      <input type="text" name="first_name" value="" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'">
+      <input type="text" name="last_name" value="" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'">
+
+      <input id = 'userin' type="text" name="username" value="" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+
+
+
+      <input type="password" name="password" value="" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+
+
+
+      <button class = "enter" type="submit" name="button"> Register </button>
+
+    </form>
+    </div>
+    <div class="msgs">
+
+    </div>
+    <div class="none message">
+        <p id="req">Username must have a minimum of 4 characters and a maximum of 8 characters. </p>
+    </div>
+    <ul class = "requirements message"> Password must contain:
+      <li>A special character(!@#)</li>
+      <li>A minimum of 4 character</li>
+      <li>A maximum of 8 characters</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+
+  </body>
+</html>

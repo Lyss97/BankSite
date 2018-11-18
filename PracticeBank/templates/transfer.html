@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles/transfer.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title></title>
+  </head>
+  <body>
+    <h1>Transfer</h1>
+    <div class="box">
+      <div class="container">
+
+
+    <label for="">Transfer Funds From </label>
+    <form action="/transbal" method="post">
+      <select id="sel" name="type">
+      <option value="checking">Checking</option>
+      <option value="savings">Savings</option>
+    </select>
+<br><br>
+    <label for="">Transfer Funds To </label>
+    <br>
+      <select name="type2">
+    <option value="checking">Checking</option>
+    <option value="savings">Savings</option>
+    </select>
+
+<br><br>
+    <input type="number" name="amt" value="">
+    <button type="submit" name="button">Enter</button>
+
+    </form>
+    <br><br>
+    <form class="forms" action="/" method="get">
+      <button type="submit" name="signOut"> Sign Out </button>
+    </form
+  </div>
+
+  </div>
+
+  </body>
+</html>

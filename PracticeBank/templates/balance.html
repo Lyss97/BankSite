@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- this page will be deleted at some paint just checking a function-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/balance.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title></title>
+  </head>
+  <body>
+
+
+    <p id="savings">Savings: {{savings}}</p>
+    <p id="checking">Checking : {{checking}}</p>
+    <p id="ms"> Would you like to make another transaction? </p>
+
+
+    <div class="grid">
+      <div class="log">
+        <div class="cont">
+    <form class="f1" action="/mm2" method="post">
+      <button type="submit" name="next_trans"> Yes</button>
+    </form>
+    <form class="f2" action="/" method="get">
+      <button type="submit" name="signOut"> Sign Out </button>
+    </form>
+    </div>
+    </div>
+</div>
+{{error}}
+
+{{success}}
+  </body>
+</html>
+<!--later we will the page to display checking or savings-->
